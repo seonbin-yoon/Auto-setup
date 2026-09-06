@@ -30,7 +30,7 @@ class Edk2Check(TypedDict):
     Depends_on: str
 
 class ShellCommand(TypedDict):
-    Argu: bool
+    Need_argu: bool
     Command: tuple[str, ...]
     Exec: Callable[..., Any]
 

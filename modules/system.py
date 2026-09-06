@@ -38,6 +38,9 @@ def get_home_path() -> str:
 
     return path
 
+def get_program_path() -> str:
+    return os.path.basename(sys.argv[0])
+
 def check_need_sudo() -> bool:
     if os.getuid() == 0:
         return False

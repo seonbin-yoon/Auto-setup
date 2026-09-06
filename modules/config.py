@@ -1,9 +1,8 @@
 import configparser
 from typing import cast
 
-from _except import InitError
-
 from modules import datatype
+from modules._except import InitError
 
 
 def get_config() -> datatype.Config:
